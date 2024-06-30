@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video-Player</title>
+    <link rel="stylesheet" href="Video-Plauer.css">
+    <link rel="icon" href="https://fav.farm/🎥">
+</head>
+<body>
+<div class="player">
+    <video src="video/652333414.mp4"  class="player_video Vviewe" id="BDIO" preload="none"></video>
+    <div class="controls">
+        <div class="progress">
+            <div class="progressFilled"></div>
+        </div> 
+        <button class="playButton toggle" title="Play" >►</button>
+        <input type="range" min="0" max="1" step="0.05" value="1" title="Volume" class="player_slider"name="volume">
+        <input type="range" min="0.1" max="2" value="1" title="speed" class="player_slider" name="playbackRate" step="0.1">
+        <button data-skip="-10" class="player_Button">« 10s</button>
+        <button data-skip="25" class="player_Button">25s »</button>
+    </div>
+</div>      
+
+
+
+</div>
+<script src="Video-Player.js" defer="false"></script>
+</body>
+</html>
