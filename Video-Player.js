@@ -11,7 +11,6 @@ let mousedown = false;
 function toggle(){
     if(Vview.paused){
         Vview.play();
-    Vview.preventDefault()
     }else{
         Vview.pause();
     }

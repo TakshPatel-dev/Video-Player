@@ -16,6 +16,7 @@ body{
  position: relative;
  overflow:hidden;
 max-width: 750px;
+border-radius: 3px;
 }
 .player_video{
     width:100%
