@@ -11,6 +11,7 @@ let mousedown = false;
 function toggle(){
     if(Vview.paused){
         Vview.play();
+    Vview.preventDefault()
     }else{
         Vview.pause();
     }
@@ -53,3 +54,4 @@ progress.addEventListener(`mouseup`,()=>mousedown = false);
 progress.addEventListener(`mousemove`,(e)=>mousedown && scrub(e));
 slide.forEach(slider => slider.addEventListener(`change`,SpeedAndVol));
 let inp = document.getElementById(`vdio`)
+progress.addEventListener(`click`,scrub)
